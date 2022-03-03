@@ -1,5 +1,9 @@
 <div class="conatainer">
   <div class="card shadow-sm">
+    <div class="container">
+      <p *ngIf="personnel.age>35" class="text-success d-flex" style="font-size: 15px; font-style: italic;">Mentor</p>
+
+    </div>
     <img [src]="personnel.profil" width="100" alt="" srcset="">
 
     <div class="card-body">
