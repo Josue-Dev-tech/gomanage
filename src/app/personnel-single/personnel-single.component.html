@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="d-flex">
+    <a routerLink="/personnels" class="text-warning">Retour</a>
+  </div>
+</div>
+<div class="conatainer">
+  <div class="card shadow-sm">
+    <img [src]="personnel.profil" width="100" alt="" srcset="">
+
+    <div class="card-body">
+      <p class="card-text">{{ personnel.name }}</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <p>Age: {{ personnel.age }} "</p>
+        <p>Adresse: {{ personnel.adresse }}</p>
+        <p>Salaire: {{ personnel.salary| currency}}</p>
+        <p>Prime Mensuel: {{ personnel.prime | percent: '1.0-2'}}</p>
+        <small class="text-muted">Poste {{personnel.registrationDate | date: 'd MMMM y'}}</small>
+      </div>
+    </div>
+  </div>
+</div>
